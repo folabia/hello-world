@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Villiers</title>
+<style>
+body {background-color:powderblue;}
+h1, h3 {text-align:center;}
+h1 {color:blue;font-family:Georgia;font-size:300%}
+h3 {color:red;font-family:Verdana}
+p {border: 5px solid blue;}
+</style>
+<link rel="icon" href="favicon.ico" />
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+
+<h1>Villiers Practice</h1>
+<h3>by Folabi Ayonrinde</h3>
+
+<p style="text-align:right;">Hi, I'm Afolabi (Folabi for short). I'm studying Computer Science at A-Level as well as Maths, Physics and Spanish. My favourite so far is Computer Science, hopefully I'll take it on in the future.</p>
+<p style="border:7px dotted grey;text-align:center;">Speaking of Future, check out his latest album 
+<a href="https://play.spotify.com/album/1P8NvRvykmDrKyfglMerMv" target="_blank"><em>HNDRXX on Spotify</em></a>.</p>
+
+<a href="http://www.adidas.co.uk/men-running-shoes-neutral" target="_blank">
+<img src="image.png" 
+alt="Cube Image Logo" 
+align="center"
+width="200"
+height="100">
+<br>
+<br>
+<strong>
+Here</a>'s a link to one of my "running" tabs.</strong>
+<br>
+
+</body>
+</html>
